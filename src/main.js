@@ -27,9 +27,7 @@ class App extends React.Component {
     super(props)
 
     this.updateCowsay = this.updateCowsay.bind(this);
-    this.selectOption = this.selectOption.bind(this);
-    this.renderChoices = this.renderChoices.bind(this);
-    
+    this.selectOption = this.selectOption.bind(this);    
 
     this.state = { 
 
@@ -37,15 +35,6 @@ class App extends React.Component {
       options: [],
       choice: ''
     }
-  }
-
-  renderChoices() {
-
-    return this.state.options.forEach(opt => {
-      return `<option>${opt}</option>`
-      
-    })
-
   }
 
   updateCowsay() {
