@@ -1,4 +1,5 @@
-Description: Uses cowsay and faker modules to show a cow speaking some random text. 
+Description: Uses cowsay and faker modules to show a cow speaking some random text.
+ 
 _Bonus: allows user to select which type of faker text they want to generate_
 
 ## Launch
