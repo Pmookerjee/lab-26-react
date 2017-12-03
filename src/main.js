@@ -8,7 +8,6 @@ import './style/main.scss';
 
 const faker = require('faker');
 const fakerAPI = ('http://faker.hook.io/?property');
-let arr = [];
 
 class Header extends React.Component {
 
@@ -77,10 +76,8 @@ class App extends React.Component {
 
       superagent.get(fakerAPI)
         .then(result => {
-            let options = result.body[0].expected;
-            
-            console.log('options: ', options)
-            this.setState({options});          
+          let options = result.body[0].expected;
+          this.setState({options});          
         })
         .catch(err => { throw err; });
     }
@@ -90,7 +87,6 @@ class App extends React.Component {
   selectOption(e) {
 
     let choice = e.target.value;
-    console.log('picked: ', choice);
     this.setState({choice});
 
   }
