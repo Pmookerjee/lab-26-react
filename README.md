@@ -4,7 +4,7 @@ _Bonus: allows user to select which type of faker text they want to generate_
 
 ## Launch
 
- CLI: Type `npm run watch` to launch the app
+ CLI: Type `npm run build` to launch the app
  Open up a browser to `localhost:8080`
 
 ## Usage
